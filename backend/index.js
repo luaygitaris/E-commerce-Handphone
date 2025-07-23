@@ -66,4 +66,7 @@ app.post("/create-transaction", async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('API Working');
+});
 app.listen(3001, () => console.log("Server running on http://localhost:3001"));
