@@ -4,6 +4,7 @@ const axios = require("axios")
 const midtransClient = require("midtrans-client")
 const { config } = require('dotenv');
 config();
+port = 3001
 
 const app = express();
 app.use(cors());
