@@ -99,7 +99,7 @@ const Payment: React.FC = () => {
   );
 
   try {
-    const response = await fetch("http://localhost:3001/create-transaction", {
+    const response = await fetch("https://e-commerce-handphone.vercel.app/create-transaction", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
