@@ -1,12 +1,11 @@
-// server.ts
-import express from "express";
-import cors from "cors";
-import axios from "axios";
-import midtransClient from "midtrans-client";
-import dotenv from "dotenv";
 
-// 🔐 Load environment variables
-dotenv.config();
+
+const express = require("express");
+const cors = require("cors");
+const axios = require("axios")
+const midtransClient = require("midtrans-client")
+const { config } = require('dotenv');
+config();
 
 const app = express();
 app.use(cors());
