@@ -34,7 +34,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
             {product.description}
           </p>
           <p className="text-green-600 font-bold text-sm md:text-lg">
-            ${product.price.toFixed(2)}
+            Rp {product.price.toLocaleString("id-ID")}
           </p>
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-between gap-2 mt-4 text-[10px] lg:text-sm">

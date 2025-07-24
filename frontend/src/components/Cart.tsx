@@ -67,7 +67,7 @@ const Cart: React.FC<Props> = ({
                     </button>
                   </div>
                   <p className="font-semibold text-gray-700">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    Rp {(item.price * item.quantity).toLocaleString("id-ID")}
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Cart: React.FC<Props> = ({
           <div className="border-t pt-4">
             <div className="flex justify-between text-lg font-bold">
               <span>Total:</span>
-              <span>${total.toFixed(2)}</span>
+              <span>Rp {total.toLocaleString("id-ID")}</span>
             </div>
             <button
               onClick={onCheckout}

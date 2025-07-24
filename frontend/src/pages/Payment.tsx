@@ -224,7 +224,7 @@ const Payment: React.FC = () => {
           <p>
             Total:{" "}
             <span className="text-2xl font-semibold text-green-600">
-              ${total.toFixed(2)}
+              Rp {total.toLocaleString("id-ID")}
             </span>
           </p>
           <p className="font-semibold">BSI 1234567890 a.n. PT Toko Online</p>

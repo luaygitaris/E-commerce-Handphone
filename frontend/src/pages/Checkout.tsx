@@ -45,7 +45,7 @@ const Checkout: React.FC = () => {
                   </div>
                 </div>
                 <p className="font-bold text-gray-800">
-                  ${(item.price * item.quantity).toFixed(2)}
+                  Rp {(item.price * item.quantity).toLocaleString("id-ID")}
                 </p>
               </div>
             ))}
@@ -53,7 +53,7 @@ const Checkout: React.FC = () => {
 
           <div className="mt-6 border-t pt-4 flex justify-between font-bold text-lg">
             <span>Total:</span>
-            <span>${total.toFixed(2)}</span>
+            <span>Rp {total.toLocaleString("id-ID")}</span>
           </div>
 
           <button
